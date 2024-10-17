@@ -31,6 +31,16 @@ return require('packer').startup(function(use)
       'neovim/nvim-lspconfig',
     }
 
+    use {
+      'projekt0n/github-nvim-theme',
+      config = function()
+        require('github-theme').setup({
+          -- ...
+        })
+        vim.cmd('colorscheme github_dark_default')
+      end
+    }
+
   -- use 'foo2/bar2.nvim'
 
   -- Automatically set up your configuration after cloning packer.nvim
