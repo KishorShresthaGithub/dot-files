@@ -25,7 +25,7 @@ return require('packer').startup(function(use)
        requires  = {{'nvim-lua/plenary.nvim'}}
      }
 
-     use  {
+     use {
       'williamboman/mason.nvim' ,
       'williamboman/mason-lspconfig.nvim',
       'neovim/nvim-lspconfig',
