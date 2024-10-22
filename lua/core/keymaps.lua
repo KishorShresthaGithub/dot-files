@@ -17,5 +17,8 @@ vim.opt.expandtab = true
 vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
 vim.keymap.set('n', '<leader>k', ':terminal<CR>')
 vim.keymap.set('n', '<leader>cd', ':cd %:p:h<CR>:pwd<CR>')
+vim.keymap.set({ 'n', 'v' }, '<leader>y', '"*y')
+vim.keymap.set('n', '<leader>p', '"*p')
 
-vim.keymap.set('t', '<Esc><Esc>', '<C-\\><C-n>', {silent = true})
+vim.keymap.set('t', '<Esc><Esc>', '<C-\\><C-n>', { silent = true })
+vim.keymap.set('i', '<C-i>', '<C-p>')
