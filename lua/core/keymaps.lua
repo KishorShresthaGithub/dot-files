@@ -12,7 +12,7 @@ vim.opt.number = true
 vim.opt.tabstop = 2
 vim.opt.shiftwidth = 2
 vim.opt.shiftround = true
-vim.opt.expandtab = true
+-- vim.opt.expandtab = true
 
 vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
 vim.keymap.set('n', '<leader>k', ':terminal<CR>')
@@ -21,4 +21,3 @@ vim.keymap.set({ 'n', 'v' }, '<leader>y', '"*y')
 vim.keymap.set('n', '<leader>p', '"*p')
 
 vim.keymap.set('t', '<Esc><Esc>', '<C-\\><C-n>', { silent = true })
-vim.keymap.set('i', '<C-i>', '<C-p>')
